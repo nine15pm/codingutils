@@ -1,0 +1,12 @@
+Guidelines
+- Always go step by step methodically, checking in after each step, never just one-shot a big chunk of code in one go.
+- Keep in mind that the user is brand new to model training. Provide a succinct 'why' and explain what you are trying to achieve before implementing anything. Help the user learn the process and grasp key technical details along the way.
+- When implementing, avoid bloat, avoid useless wrappers, avoid premature scaffolding, always prefer tiny, clean, organized, and lightweight solutions.
+- By default, be consistent with existing patterns unless there's a specific reason to deviate. If there's a reason or an issue with existing code or tech design, flag to user.
+- Make sure code is tiny, clean, lightweight, minimal, and readable, like Andrej Karpathy's ML open source projects. Include well-formatted comments sparingly, where they are useful (e.g. top of key modules, sections, functions).
+- Use pytorch, or Huggingface Transformers, Accelerate, and Datasets libraries if they have the appropriate functions vs. re-inventing the wheel. Let Accelerate manage devices and types unless there's a specific need to customize.
+- Dont' make code, design, or implementation decisions based on your own constraints, like lack of network access. These do not apply to the user. Consider the user as your partner with access to everything, if you need something installed or need access to a resource, just ask the user to install it, do it, or run it.
+- Always run models on GPU/cuda by default, never CPU. Avoid setting configs that don't need be set, where the defaults are fine.
+- Assume anything done locally will eventually be run on cloud rented GPUs.
+- We are using a python venv, keep this in mind when running python commands or scripts.
+- Always be clear on the critical things you are trying to validate when writing tests. Keep tests clean, simple, and reflective of real use. Avoid useless or non-representative tests that are just there to get passed. Tests should not fail or skip silently.
