@@ -1,5 +1,5 @@
 ---
-description: Plan a task before implementing
+description: plan a task before implementing
 argument-hint: [TASK="<task>"]
 ---
 
