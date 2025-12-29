@@ -6,6 +6,8 @@
 ## Before coding
 - Think through the approach before writing any code. Understand specs and current state first.
 - If there are key decisions or clarifications needed, make recommendations and check in before implementing.
+- The goal is the cleanest correct end state. Don’t preserve old patterns for “compatibility.”
+- If something is messy or wrong, flag it and propose the clean fix. Don’t stack more bad code on top.
 
 ## Architecture & design
 - Absolutely clean, consistent, simple, elegant patterns. Nothing hacky, dirty, redundant.
