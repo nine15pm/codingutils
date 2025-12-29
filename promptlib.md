@@ -14,6 +14,9 @@ Root cause this logically and methodically until you have a conclusion and propo
 ## Test planning
 Are there any essential tests we should write to validate implementation? Plan out what tests are needed for MECE coverage of all logic and edge cases. Tests should be real (not mocked/faked), written independently, and focused on guaranteeing correctness. Do not write any code yet.
 
+## Write tests
+Tests should be real, not mocked or faked. They should not know about the internal of game code we're testing (e.g. lightweight harness if needed). And they should be written independently without running them to ensure we don't hack tests to pass. Go step by step in logical pieces, do not one-shot a lot of code at once. Review your own work for global correctness and check in with me when done each set of tests.
+
 ## Review implementation 1
 We're doing [X]. This will follow the spec in [X]. An eng just implemented. Review the code and flag if there are any errors or issues so far. The goal is clean elegant tech design, correct logic, simple and tiny where possible, and not hacky/bloated at all.
 
