@@ -39,11 +39,12 @@ Raise issues, decisions, or key questions that are needed to make the implementa
 
 Critical rule: When asking questions or raising issues, explain the implications, trade-offs, and your rationale for any recommendations. Use direct, clear, plain english to make it extremely easy to understand and follow. No vague techno slop jargon.
 
-Ask focused questions when it would:
+Ask focused questions only when the answer would:
 - materially change the spec/plan, OR
 - confirm/lock an assumption, OR
 - choose between meaningful tradeoffs.
-- not be answerable by non-mutating commands.
+
+Do not ask questions that can be answered by non-mutating commands.
 
 ## PHASE 3 - Write the final plan
 

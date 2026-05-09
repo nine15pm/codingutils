@@ -11,7 +11,7 @@ Write docs that are extremely easy to understand and read for someone new to the
 ## Guidelines
 - Prefer clarity over brevity. Use simple, direct, easy-to-read language, make the writing extremely easy to understand and follow, and include reasoning, rationale, or context to help with this.
 - Explain why important points matter in plain English. The implication, or the "why" behind essential points.
-- Keep things information dense, i.e. every sentence should say something. Do not write vague filler content that doesn't add any clarity or information or specify anything. E.g. corporate technical jargon terms or ambiguous language that sounds relevant, but says nothing.
+- Keep writing information dense: every sentence should add clarity, context, or specific info. Do not write vague filler, corporate jargon, or broad statements that sound relevant but say little.
 - Keep formatting clean and coherent; avoid random one-off points, complex formatting structure, and lots of unnecessary whitespace.
 - Separate critical information from minor details; Avoid including irrelevant noise and keep low-importance specifics out of the main flow.
 - Avoid overly prescribing implementation details (function/variable names) unless essential; reference code only when it directly supports the doc’s purpose or is needed as an illustrative example for understanding.
