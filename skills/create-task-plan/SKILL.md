@@ -53,15 +53,15 @@ Always check in with the user before writing the final plan. Only write the fina
 
 Use this filename format when the milestone number can be inferred:
 
-`m<milestone-number>-<short-task-name>-plan.md`
+`plan-m<milestone-number>-<short-task-name>.md`
 
 Example:
 
-`docs/taskplans/m1-auth-routing-plan.md`
+`docs/taskplans/plan-m1-auth-routing.md`
 
 If the milestone number cannot be inferred from the task, docs, branch, or existing task plans, omit the milestone prefix:
 
-`docs/taskplans/<short-task-name>-plan.md`
+`docs/taskplans/plan-<short-task-name>.md`
 
 The plan must be concise, specific, and actionable.
 
