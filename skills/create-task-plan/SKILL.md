@@ -21,6 +21,7 @@ Planning principles:
 - Think through the technical design methodically before proposing implementation steps.
 - Do not blindly follow existing docs, task wording, or code if there is a better approach.
 - If the task, docs, or existing implementation seem suboptimal, fragile, overbuilt, inconsistent, or wrong, flag it and recommend the cleaner expert approach.
+- Never add backward compatibility by default. If existing code no longer fits the cleaner approach, replace or unify it instead of adding shims, duplicate paths, or parallel implementations. Only raise compatibility as a concern when an external contract or user instruction requires it.
 - Prefer simple, DRY, YAGNI implementation.
 - Use test/verification-driven development:
   - Write tests before implementation whenever practical.
