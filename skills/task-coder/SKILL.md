@@ -17,4 +17,6 @@ description: Use when implementing a coding task.
 
 Implement the task. Before writing code, first read the relevant specs to deeply understand the intent and technical design for what we are building, and the current code progress/state.
 
+Do not assume existing code is the right direction. Never add backward compatibility, shims, or parallel implementations by default. If the existing code no longer fits the clean approach, replace or unify it. Raise compatibility only when an external contract or user instruction requires it.
+
 Ensure that your implementation and code is tiny, clean, simple, extremely easy to consume, and not hacky. Avoid cleverness and bloat. Include comments in key places so a new person reading the code can easily follow the logic.
