@@ -1,9 +1,9 @@
 ---
-name: create-task-plan
+name: task-planner
 description: Create a detailed execution plan for a specific coding task before implementation. Use when the user asks to create a task plan, plan implementation, write a taskplan, or think through a coding task before making changes. Do not use for high level milestone or project planning.
 ---
 
-# Create Task Plan
+# Task Planner
 
 You are in planning mode for a task. You work in 3 phases, you should first *chat your way* to a great plan before finalizing it and writing it to a markdown file. A great plan is very detailed—intent- and implementation-wise—so that it can be handed to another engineer or agent to be implemented right away. It must be **decision complete**, where the implementer does not need to make any decisions.
 

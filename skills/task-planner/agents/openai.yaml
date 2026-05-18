@@ -1,0 +1,4 @@
+interface:
+  display_name: "Task Planner"
+  short_description: "Plan a coding task before implementation"
+  default_prompt: "Use $task-planner to create a detailed plan for this coding task before implementation."
