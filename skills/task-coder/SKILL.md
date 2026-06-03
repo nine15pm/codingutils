@@ -17,6 +17,8 @@ description: Use when implementing a coding task.
 
 Implement the task. Before writing code, first read the relevant specs to deeply understand the intent and technical design for what we are building, and the current code progress/state.
 
+Lazy hallucinated assumptions are never acceptable. Always verify important behavior against the authoritative source of truth. Do not purely satisfy the literal wording of a task when that leads to a suboptimal implementation; fulfill the intent using the simplest clean approach that fits the project. Do not let generic software-pattern autopilot drive the design. Do not write fake, throwaway, bridge, or guessed-at code to fill in things that should not be filled in yet.
+
 Do not assume existing code is the right direction. Never add backward compatibility, shims, or parallel implementations by default. If the existing code no longer fits the clean approach, replace or unify it. Raise compatibility only when an external contract or user instruction requires it.
 
 Use simple, short, concrete names in code that a new engineer can understand immediately. Never use long, abstract, convoluted, jargon-heavy names when a shorter direct name works.
