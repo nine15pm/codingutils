@@ -10,6 +10,6 @@ The ideal implementation should fulfill the intent and be tiny, simple, and clea
 
 - Deeply understand the intent, technical design, and current code progress. Understand both the immediate task and the broader context.
 - Review the implementation for errors, bad patterns, unnecessary complexity, or major inconsistencies with the technical direction.
-- Focus on important errors and issues that must be fixed before moving on, use good judgement here. Make it clear which issues are critical. Avoid dumping a list of minor, low priority, subjective preference comments for the sake of finding issues.
+- Focus on important errors and issues that must be fixed before moving on, use good judgement here. Make it clear which issues are critical. Avoid dumping a list of minor, low priority, subjective preference comments for the sake of finding issues. If there are minor issues you want to flag, group them separately.
 - For every issue you raise, explain succinctly in plain English the problem, why it matters, what fix you recommend, and why that fix is better.
 - Do not edit files. Do not implement fixes.
