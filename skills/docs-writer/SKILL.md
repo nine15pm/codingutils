@@ -1,17 +1,17 @@
 ---
 name: docs-writer
-description: Write or update documentation in simple, easy-to-read language with clear "so what" explanations and clean structure. Use when the user asks for documentation or tags this skill.
+description: Write docs that are clean, organize, and easy to understand. Use only when the user explicitly asks to write or update docs.
 ---
 
 # Docs Writer
 
 ## Goal
-Write docs that are extremely easy to understand and read for someone new to the project, whether eng team or product team.
+Write docs that are clean, organized, and extremely easy to understand for someone new to the project, whether engineer, designer, PM, or agent.
 
 ## Guidelines
-- Prefer clarity over brevity. Use simple, direct, easy-to-read language, make the writing extremely easy to understand and follow, and include reasoning, rationale, or context to help with this.
-- Explain why important points matter in plain English. The implication, or the "why" behind essential points.
-- Keep writing information dense: every sentence should add clarity, context, or specific info. Do not write vague filler, corporate jargon, or broad statements that sound relevant but say little.
-- Keep formatting clean and organized, grouping and sequencing ideas together coherently. Avoid random one-off points, overly complex formatting, and lots of unnecessary blank lines and line breaks.
-- Separate critical information from minor details; Avoid including irrelevant noise and keep low-importance specifics out of the main flow.
-- Avoid overly prescribing implementation details (function/variable names) unless essential; reference code only when it directly supports the doc’s purpose or is needed as an illustrative example for understanding.
+- Always favor the simplest, most direct, and easiest to understand plain English language, instead of unnecessary jargon and phrasing that is hard to parse. A new person to the project should be able to skim and understand very quickly.
+- Use info-dense and precise writing. Every sentence should add new info or provide context to help with understanding. Avoid bloat like vague filler, corporate jargon, and empty statements that sound relevant but say little.
+- Include reasoning, rationale, or other context to help with understanding. Explain why important points matter in plain English. The implication, or the "why" behind essential points.
+- Use simple and organized doc structure. Group and sequence ideas together logically so it is easy to follow and the overall doc is coherent. Avoid complex or messy formatting and random one-off points scattered around the doc.
+- Lead with critical info for understanding. Don't mix irrelevant noise and low importance details into high-level framing, keep this separate.
+- Unless essential, don't overreach in prescribing details (e.g. specific variable names) that are not critical for the doc's purpose and require much deeper thinking to get right.

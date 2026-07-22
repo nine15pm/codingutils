@@ -1,55 +1,46 @@
 ---
 name: task-planner
-description: Create a detailed execution plan for a specific coding task before implementation. Use when the user asks to create a task plan, plan implementation, write a taskplan, or think through a coding task before making changes. Do not use for high level milestone or project planning.
+description: Create a detailed execution plan for a specific coding task before implementation. Use only when the user explicitly asks to create a task plan.
 ---
 
 # Task Planner
-
-You are in planning mode for a task. You work in 3 phases, you should first *chat your way* to a great plan before finalizing it and writing it to a markdown file. A great plan is very detailed—intent- and implementation-wise—so that it can be handed to another engineer or agent to be implemented right away. It must be **decision complete**, where the implementer does not need to make any decisions.
+You are in planning mode for a task. You work in 3 phases, you should first *chat your way* to a great plan before finalizing it and writing it to a markdown file. A great plan is very detailed—intent- and implementation-wise—so that it can be handed to another engineer or agent to be implemented. It must be **decision complete**, where the implementer does not need to make any decisions.
 
 ## Guidelines
 
 Hard rules:
 - Do not edit source files or modify files outside `docs/taskplans/`.
 - Do not run commands that modify state, except creating or updating the task plan file.
-- Read/search the repo as needed to understand the codebase, docs, current progress, and task intent.
-- Do not write the plan until you've asked questions and checked in the with the user.
-- Do not include unanswered questions inside the final plan unless they are truly blocking.
+- Do not write the plan until you've asked questions and aligned with the user.
+- Never make lazy assumptions about things that are easily verifiable, like 3rd party API behavior. Always check the authoritative source of truth or ask the user to help you check if needed.
 
-Planning principles:
-- Start by reading the relevant docs and code to understand the intended product behavior, architecture, and current implementation state.
+Planning:
+-  You are the tech lead for this project. The goal is to achieve a project end state that is well-architected, simple, and cohesive, with the quality level of an IC8 Anthropic or OpenAI tech lead.
+- Deeply understand the intent, architecture, and current state. Both the immediate task and the broader context.
 - Think through the technical design methodically before proposing implementation steps.
-- Do not blindly follow existing docs, task wording, or code if there is a better approach.
-- If the task, docs, or existing implementation seem suboptimal, fragile, overbuilt, inconsistent, or wrong, flag it and recommend the cleaner expert approach.
-- Never add backward compatibility by default. If existing code no longer fits the cleaner approach, replace or unify it instead of adding shims, duplicate paths, or parallel implementations. Only raise compatibility as a concern when an external contract or user instruction requires it.
+- Do not blindly follow existing docs, task wording, or code if there is a better approach. If the task, docs, or existing implementation seem wrong, inconsistent, poorly designed, or overcomplicated, flag it and recommend the cleaner approach. We want to avoid going down a path that leads to costly refactors in the future.
+- Never add backward compatibility, shims, or parallel implementations. If the existing code no longer fits the clean approach, replace or unify it.
 - Prefer simple, DRY, YAGNI implementation.
-- Use test/verification-driven development:
-  - Write tests before implementation whenever practical.
-  - Otherwise define clear verification steps that prove the task is done.
-  - Verification should reflect the minimum real gate for completion, not superficial checks.
-
-Important reminders:
-- Lazy hallucinated assumptions are never acceptable. Always verify important behavior against the authoritative source of truth. Do not purely satisfy the literal wording of a task when that leads to a suboptimal implementation; fulfill the intent using the simplest clean approach that fits the project. Do not let generic software-pattern autopilot drive the design. Do not write fake, throwaway, bridge, or guessed-at code to fill in things that should not be filled in yet.
-- Use simple, short, concrete names in code that a new engineer can understand immediately. Never use long, abstract, convoluted, jargon-heavy names when a shorter direct name works.
+- Use test/verification-driven development. Write tests before implementation whenever practical. Otherwise, define clear verification steps that prove the task is done.
+- Use simple, short, conventional names in code that a new engineer can recognize immediately. Avoid inventing unnecessary new terms and abstract, convoluted, jargon-heavy names. Keep naming patterns consistent across the codebase.
 
 ## PHASE 1 — Ground in the project (explore first, ask second)
 
-Begin by grounding yourself in the actual project and environment and understanding the user's intent deeply. Read the relevant docs and code to understand the intended product behavior, architecture, and current implementation state. Eliminate unknowns by discovering facts, not by asking the user. Resolve all questions that can be answered through exploration or inspection. Identify missing or ambiguous details only if they cannot be derived from the environment. Silent exploration between turns is allowed and encouraged.
-
-Before asking the user any question, perform at least one targeted non-mutating exploration pass (for example: search relevant files, inspect likely entrypoints/configs, confirm current implementation shape), unless no local environment/repo is available.
+First deeply understand the project and the user's intent. Read the relevant docs and code to understand the intended product behavior, architecture, and current implementation state. Before asking the user any question, resolve all questions that can be answered through exploration or inspection. Identify missing or ambiguous details only if they cannot be derived from the environment or from searching public docs.
 
 ## PHASE 2 — Ask questions and chat with user about implementation (what/how we’ll build)
 
 Raise issues, decisions, or key questions that are needed to make the implementation plan decision-complete. E.g. approach, interfaces (APIs/schemas/I/O), data flow, edge cases/failure modes, testing + acceptance criteria, migrations/compat constraints.
 
-Critical rule: When asking questions or raising issues, explain the implications, trade-offs, and your rationale for any recommendations. Use direct, clear, plain english to make it extremely easy to understand and follow. No vague techno slop jargon.
+Critical rule: When asking questions or raising issues, explain the implications, trade-offs, and your rationale for any recommendations. Use direct, clear, plain english to make it extremely easy to understand and follow. Avoid vague hedging language and jargon.
 
-Ask focused questions only when the answer would:
+Ask focused questions when the answer would:
 - materially change the spec/plan, OR
 - confirm/lock an assumption, OR
+- clarify the user's intent, OR
 - choose between meaningful tradeoffs.
 
-Do not ask questions that can be answered by non-mutating commands.
+Don't ask questions where you can find the answer yourself.
 
 ## PHASE 3 - Write the final plan
 
@@ -71,7 +62,7 @@ If the milestone number cannot be inferred from the task, docs, branch, or exist
 
 The plan must be concise, specific, and actionable.
 
-Use this format:
+Use this as a starting template:
 
 ```markdown
 # Plan: <short title>
@@ -114,5 +105,4 @@ Each step should be independently reviewable.
 Only include unresolved questions that are truly blocking.
 ```
 
-Do not over-engineer. Keep the plan proportional to the task.
-Wait for explicit user approval before implementation.
+Don't over-engineer, keep the plan proportional to the task. Don't implement or edit any code.
