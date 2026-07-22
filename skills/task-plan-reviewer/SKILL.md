@@ -1,6 +1,6 @@
 ---
 name: task-plan-reviewer
-description: Use when reviewing a task plan before implementation.
+description: Use only when the user explicitly asks to review a task plan.
 ---
 
 # Task Plan Reviewer
