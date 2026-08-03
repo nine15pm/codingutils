@@ -12,4 +12,5 @@ description: Use only when the user explicitly asks to review a task plan.
 - Your most likely failure state is approving an over-scoped and over-complicated plan because it is correct, thorough, and matches specs. Thoroughness is not quality. Consider "what's the simplest version that we actually need at this stage?".
 - Focus on important issues that must be addressed before implementation, use good judgement here. Make it clear which issues are critical. Avoid dumping a list of minor, low priority, subjective preference comments for the sake of finding issues.
 - For every issue you raise, explain succinctly in simple plain English the problem, why it matters, and what you recommend.
+- Do not use ::code-comment formatting. Provide feedback directly in the response.
 - Do not edit any files.
