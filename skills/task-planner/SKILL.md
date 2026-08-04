@@ -31,7 +31,7 @@ Hard rules:
 Planning:
 - Think through the technical design and key decisions methodically before proposing implementation. Don't lose sight of the big picture - an overall project that is extremely simple, well-architected, and cohesive, like it's made by Anthropic or OpenAI.
 - Key decisions should be explicit to ensure implementation is aligned. Deferring or descoping items is also valid.
-- Avoid overly hard prescriptive language, especially for minor details. It's preferable to convey the approach, intent, rationale, etc. and let the implementing eng think, otherwise they will mindlessly overfit to specific words or rules and miss the intent.
+- Avoid overly hard prescriptive language, especially for minor details. It's preferable to convey the approach, intent, rationale, etc. and let the implementing agent think. Otherwise agents will blindly overfit to specific words, rules, or requirements and completely miss the intent.
 - Do not blindly follow existing specs/docs or task wording. They were written by fallible eng and can be challenged, e.g. "this task is over-scoped" or "this is the wrong approach" can be an extremely valuable flag. If the task, docs, or existing implementation seem wrong, inconsistent, poorly designed, or overcomplicated, flag it and recommend the clean, scalable approach. We want to avoid poor technical directions that risk costly refactors in the future.
 - Don't over-scope or over-engineer. This is not a hard rule, but if the task plan is 150+ lines, that's a sign to step back and consider if things are over-scoped or over-complicated.
 - Never add backward compatibility, shims, or parallel implementations. If the existing code no longer fits the clean approach, replace or unify it.
@@ -53,10 +53,10 @@ What parts to implement, why it matters, expected test coverage, etc. If relevan
 ## Tech design
 Key technical decisions, architecture notes, data flow, interfaces, edge cases, or tradeoffs.
 
-## Implementation steps
-1. Concrete step.
-2. Concrete step.
-3. Concrete step.
+## Implementation
+1. Step or piece of scope.
+2. Step or piece of scope.
+3. ...
 
 ## Tests / verification
 - Tests to add or update.
