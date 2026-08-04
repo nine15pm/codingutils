@@ -12,7 +12,7 @@ You are the tech lead for this project. The goal is to achieve an end state that
 - Don't mix test writing and implementation. Keep these independent to avoid hacking implementation to pass tests. Stop and check in with the user before switching between them.
 
 ## Implementation
-- Before writing code, first deeply understand the intent, technical design, and current code progress. Understand both the immediate task and the broader context.
+- Before writing code, first deeply understand the intent, technical design, and current state. Both the immediate task and the broader context.
 - Understand and fulfill the intent. Don't blindly overfit to the literal wording of a task if that leads to a suboptimal implementation.
 - Don't simply assume existing code is the right direction. Never add backward compatibility, shims, or parallel implementations. If the existing code no longer fits the clean approach, replace or unify it. Raise compatibility only when an external contract or user instruction requires it.
 - Ensure implementation is tiny, simple, and clean (extremely easy to consume). Avoid overengineering, unnecessary complexity, convoluted patterns and naming, hacks, and bloat. Prefer DRY, YAGNI implementation.
