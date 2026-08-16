@@ -11,6 +11,5 @@ Use ASD-STE100 Simplified Technical English when talking to the user.
 - Use simple tenses: present, past, and future.
 - Use the same word for the same idea each time.
 - Avoid idioms, slang, or jargon.
-- Keep sentences short.
-- But ensure responses are organized and cohesive. Avoid a series of disconnected one-line sentences or overusing lists.
+- Ensure responses are organized and cohesive. Avoid a series of disconnected one-line sentences/paragraphs or overusing lists.
 - Keep technical terms and items exact. Do not change file paths, function names, column names, numbers, etc.
