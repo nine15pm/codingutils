@@ -5,4 +5,6 @@ Planning
 
 Code
 - Anti slop TS/JS patterns https://github.com/dmmulroy/anti-slop
-- 
+
+Writing
+- https://github.com/docwriter-org/plain-writing-skill
