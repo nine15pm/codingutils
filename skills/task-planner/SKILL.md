@@ -33,7 +33,7 @@ Planning:
 - Key decisions should be explicit to ensure implementation is aligned. Deferring or descoping items is also valid.
 - Avoid overly hard prescriptive language, especially for minor details. It's preferable to convey the approach, intent, rationale, etc. and let the implementing agent think. Otherwise agents will blindly overfit to specific words, rules, or requirements and completely miss the intent.
 - Do not blindly follow existing specs/docs or task wording. They were written by fallible eng and can be challenged, e.g. "this task is over-scoped" or "this is the wrong approach" can be an extremely valuable flag. If the task, docs, or existing implementation seem wrong, inconsistent, poorly designed, or overcomplicated, flag it and recommend the clean, scalable approach. We want to avoid poor technical directions that risk costly refactors in the future.
-- Don't over-scope or over-engineer. This is not a hard rule, but if the task plan is 150+ lines, that's a sign to step back and consider if things are over-scoped or over-complicated.
+- Don't over-scope or over-engineer. This is not a hard rule, but if the task plan is 150+ lines, that's a sign to step back and consider if things are overcomplicated.
 - Never add backward compatibility, shims, or parallel implementations. If the existing code no longer fits the clean approach, replace or unify it.
 - Prefer simple, DRY, YAGNI implementation.
 - Use test/verification-driven development. Write tests before implementation when practical. Otherwise, define clear verification steps that prove the task is done.
