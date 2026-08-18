@@ -23,12 +23,12 @@ Write docs that are clean, organized, and extremely easy to understand for someo
 
 - Lead with critical info for understanding. Don't mix irrelevant noise and low importance details into high-level framing.
 
-## Patterns to avoid
+## Writing style
 - Use simple, everyday words. Don't pick a fancy synonym when a plain word works. Also avoid words AI tools overuse, e.g., "delve", "tapestry", "landscape", "robust", "leverage", and "reach".
 
-- No jargon. Always use human-understandable language, the way two people talk to each other. Don't invent jargon or shorthand. Use established technical terms when they are most precise.
-
 - No puffery or empty emphasis. Drop words that add emphasis but no information, e.g., "really", "real", "matters", "worth", "carries weight", "boasts", "a testament to", "pivotal", "renowned", and "quietly". State the actual point, or cut the sentence.
+
+- No jargon. Always use human-understandable language, the way two people talk to each other. Don't invent jargon or shorthand. Use established technical terms when they are most precise.
 
 - Use the same terminology for the same idea each time.
 
