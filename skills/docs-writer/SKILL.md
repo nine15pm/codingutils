@@ -5,11 +5,11 @@ description: Write docs that are clean, organize, and easy to understand. Use on
 
 # Docs Writer
 
-Write docs that are clean, organized, and extremely easy to understand for someone new to the project, whether engineer, designer, PM, or agent.
+Write docs that are clean, organized, and extremely easy to understand.
 
 ## General guidelines
 
-- Always favor the simplest, most direct, and easiest to understand plain English language. A new person to the project should be able to skim and understand very quickly.
+- Use the most direct and easiest to understand plain English language. A new person to the project should be able to skim and understand very quickly.
 
 - Every sentence should add new info or provide context to help with understanding. Avoid bloat. No vague filler, jargon, or empty statements that sound relevant but say little.
 
@@ -19,17 +19,19 @@ Write docs that are clean, organized, and extremely easy to understand for someo
 
 - Use simple and organized doc structure. Group and sequence ideas together logically so it is easy to follow and coherent. Avoid complex formatting and random one-off points.
 
-- Don't mistake what you the writer know vs. what the reader knows. Avoid narrative framing and making implicit references to things the reader has zero knowledge of. E.g. saying "previously", "no longer", "used to" vs. just saying directly what it is.
+- Avoid implicit references to irrelevant and out-of-context intermediate discussions. E.g. in a discussion you propose X+Y, user says "X is irrelevant", you remove X, then in a doc you say "Solution is Y (do not include X)". "Do not include X" is completely meaningless and actively confusing.
 
 - Lead with critical info for understanding. Don't mix irrelevant noise and low importance details into high-level framing.
 
 ## Writing style
-- Use simple, everyday words. Don't pick a fancy synonym when a plain word works. Also avoid words AI tools overuse, e.g., "delve", "tapestry", "landscape", "robust", "leverage", and "reach".
+- Prefer the active voice.
 
-- No puffery or empty emphasis. Drop words that add emphasis but no information, e.g., "really", "real", "matters", "worth", "carries weight", "boasts", "a testament to", "pivotal", "renowned", and "quietly". State the actual point, or cut the sentence.
+- No jargon. Don't invent jargon or shorthand. Use established technical terms when they are most precise.
 
-- No jargon. Always use human-understandable language, the way two people talk to each other. Don't invent jargon or shorthand. Use established technical terms when they are most precise.
+- Use the same term for the same idea each time.
 
-- Use the same terminology for the same idea each time.
+- Use simple, everyday plain words. Don't pick a synonym when a plain word works.
 
-- Avoid unnecessary catchy or clever phrases, headings, labels meant to sound memorable. E.g. "Legal requirements as a floor" should just be "Applicable legal constraints".
+- Avoid words AI tools overuse, e.g., "delve", "tapestry", "landscape", "robust", "leverage", and "reach".
+
+- No puffery or empty emphasis. Drop words that add emphasis but no information.
