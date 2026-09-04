@@ -28,6 +28,8 @@ Write docs that are clean, organized, and extremely easy to understand.
 
 - No jargon. Don't invent jargon or shorthand. Use established technical terms when they are most precise.
 
+- Avoid mannered prose.
+
 - Use the same term for the same idea each time.
 
 - Use simple, everyday plain words. Don't pick a synonym when a plain word works.
