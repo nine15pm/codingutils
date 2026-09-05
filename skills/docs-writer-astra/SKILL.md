@@ -24,7 +24,7 @@ Write docs that are clean, organized, and extremely easy to understand.
 
 - Prefer the active voice.
 
-- No jargon. Don't invent jargon or shorthand. Use established technical terms when they are most precise.
+- No jargon. Don't invent jargon or shorthand. Use established technical terms when they are most precise. Keep technical terms exact.
 
 - Avoid mannered prose.
 
