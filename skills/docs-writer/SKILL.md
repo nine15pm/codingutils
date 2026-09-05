@@ -1,6 +1,6 @@
 ---
 name: docs-writer
-description: Write docs that are clean, organize, and easy to understand. Use only when the user explicitly asks to write or update docs.
+description: Use only when the user explicitly invokes this skill. Do not proactively use.
 ---
 
 # Docs Writer
