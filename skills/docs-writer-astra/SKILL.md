@@ -20,18 +20,18 @@ Write docs that are clean, organized, and extremely easy to understand.
 - Avoid implicit references to irrelevant and out-of-context intermediate discussions. E.g. in a discussion you propose X+Y, user says "X is irrelevant", you remove X, then in a doc you say "Solution is Y (do not include X)". "Do not include X" is completely meaningless and actively confusing.
 
 ## Writing style
-- Simple precise technical english.
+- Use simple precise succinct plain english. Think ASD-STE100 Simplified Technical English.
 
 - Prefer the active voice.
+
+- Prefer simple tenses: present, past, and future.
+
+- Use the same words for the same idea or thing each time.
 
 - No jargon. Don't invent jargon or shorthand. Use established technical terms when they are most precise. Keep technical terms exact.
 
 - Avoid mannered prose.
 
-- Use the same term for the same idea or thing each time.
-
-- Use simple, everyday plain words. Don't pick a synonym when a plain word works.
-
-- Avoid AI slop, e.g. emdashes, words like "delve", "tapestry", "landscape", "robust", "leverage", and "reach".
+- Avoid AI slop, e.g. emdashes.
 
 - No puffery or empty emphasis. Drop words that add emphasis but no information.
