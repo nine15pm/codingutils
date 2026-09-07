@@ -9,7 +9,7 @@ Write docs that are clean, organized, and extremely easy to understand.
 
 ## General guidelines
 
-- Use the most direct, precise, and simple plain English way to convey the info.
+- Be direct, clear, succinct, and logically coherent.
 
 - Avoid bloat. No vague filler, jargon, or empty statements that sound relevant but say little.
 
@@ -20,7 +20,7 @@ Write docs that are clean, organized, and extremely easy to understand.
 - Avoid implicit references to irrelevant and out-of-context intermediate discussions. E.g. in a discussion you propose X+Y, user says "X is irrelevant", you remove X, then in a doc you say "Solution is Y (do not include X)". "Do not include X" is completely meaningless and actively confusing.
 
 ## Writing style
-- Use simple precise succinct plain english. Think ASD-STE100 Simplified Technical English.
+- Use the most direct and simplest possible plain English words and sentence structure. But obviously use established technical terms when they are most precise and keep technical terms, product terms, etc. exact. Think ASD-STE100 Simplified Technical English.
 
 - Prefer the active voice.
 
@@ -28,7 +28,7 @@ Write docs that are clean, organized, and extremely easy to understand.
 
 - Use the same words for the same idea or thing each time.
 
-- No jargon. Don't invent jargon or shorthand. Use established technical terms when they are most precise. Keep technical terms exact.
+- No jargon. Don't invent jargon or shorthand.
 
 - Avoid mannered prose.
 
