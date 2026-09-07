@@ -5,15 +5,11 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 
 # Docs Writer
 
-Write docs that are clean, organized, and extremely easy to understand.
-
 ## General guidelines
 
 - Be direct, clear, succinct, and logically coherent.
 
-- Avoid bloat. No vague filler, jargon, or empty statements that sound relevant but say little.
-
-- Make sure each word in the text justifies its existence.
+- Avoid bloat. No vague filler, jargon, or empty statements that sound relevant but say little. Each word in the text should justify its existence.
 
 - Avoid overly hard prescriptive language or narrow rules, unless truly needed to spec out. It's preferable to convey the approach, intent, rationale, etc. Otherwise, agents will blindly overfit to words/rules while completely missing the intent.
 
@@ -34,6 +30,6 @@ Write docs that are clean, organized, and extremely easy to understand.
 
 - Avoid mannered prose.
 
-- Avoid AI slop, e.g. emdashes.
+- Avoid emdashes, colon-led fragments, overuse of semicolons.
 
 - No puffery or empty emphasis. Drop words that add emphasis but no information.
