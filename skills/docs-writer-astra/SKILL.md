@@ -13,6 +13,8 @@ Write docs that are clean, organized, and extremely easy to understand.
 
 - Avoid bloat. No vague filler, jargon, or empty statements that sound relevant but say little.
 
+- Make sure each word in the text justifies its existence.
+
 - Avoid overly hard prescriptive language or narrow rules, unless truly needed to spec out. It's preferable to convey the approach, intent, rationale, etc. Otherwise, agents will blindly overfit to words/rules while completely missing the intent.
 
 - Use simple and organized doc structure. Avoid complex formatting and random one-off points.
