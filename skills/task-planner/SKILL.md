@@ -1,6 +1,6 @@
 ---
 name: task-planner
-description: Create a detailed execution plan for a specific coding task before implementation. Use only when the user explicitly asks to create a task plan.
+description: Use only when the user explicitly invokes this skill. Do not proactively use.
 ---
 
 # Task Planner

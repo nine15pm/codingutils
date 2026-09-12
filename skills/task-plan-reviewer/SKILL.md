@@ -1,6 +1,6 @@
 ---
 name: task-plan-reviewer
-description: Use only when the user explicitly asks to review a task plan.
+description: Use only when the user explicitly invokes this skill. Do not proactively use.
 ---
 
 # Task Plan Reviewer

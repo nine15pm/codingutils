@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: Use only when user explicitly asks to review a completed coding task.
+description: Use only when the user explicitly invokes this skill. Do not proactively use.
 ---
 
 # Code Reviewer
