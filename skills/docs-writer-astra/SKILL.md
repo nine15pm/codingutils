@@ -7,9 +7,9 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 
 ## General guidelines
 
-- Be direct, clear, succinct, and logically coherent.
+- Be direct, clear, and logically coherent.
 
-- Avoid bloat. No vague filler, jargon, or empty statements that sound relevant but say little. Each word in the text should justify its existence.
+- Avoid bloat. No vague filler, qualifiers, canned transitions, or empty statements that sound relevant but say little. Each sentence justify its existence.
 
 - Use simple and organized doc structure. Avoid complex formatting and random one-off points.
 
@@ -18,16 +18,16 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 ## Writing style
 - Be succinct and use direct, simple, plain English words vs. harder to understand synonyms. Use established technical terms when they are most precise and keep technical terms, product terms, etc. exact.
 
-- Prefer the active voice.
+- Strongly prefer active voice.
 
 - Prefer simple tenses: present, past, and future.
 
-- Use the same words for the same idea or thing each time.
+- Use the same words for the same idea or thing each time. Don't invent new unnecessary synonyms.
 
 - No jargon. Don't invent jargon or shorthand.
 
 - Avoid mannered prose.
 
-- Avoid emdashes, colon-led fragments, overuse of semicolons.
+- Avoid emdashes, colon-led fragments, overuse of semicolons, and hyphenated compound descriptions and adjectives.
 
 - No puffery or empty emphasis. Drop words that add emphasis but no information.
