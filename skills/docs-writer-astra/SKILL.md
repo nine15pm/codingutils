@@ -16,7 +16,7 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 - Avoid implicit references to irrelevant and out-of-context intermediate discussions. E.g. in a discussion you propose X+Y, user says "X is irrelevant", you remove X, then in a doc you say "Solution is Y (do not include X)". "Do not include X" is completely meaningless and actively confusing.
 
 ## Writing style
-- Be succinct and use direct, simple, plain English words vs. harder to understand synonyms. Use established technical terms when they are most precise and keep technical terms, product terms, etc. exact.
+- Be direct. Use simple, common, plain English words vs. more complex synonyms. Use established technical terms when they are most precise and keep technical terms, product terms, etc. exact.
 
 - Strongly prefer active voice.
 
