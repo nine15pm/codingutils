@@ -1,22 +1,24 @@
 ---
 name: task-coder
-description: Use only when the user explicitly asks to implement a coding task.
+description: Use only when the user explicitly invokes this skill. Do not proactively use.
 ---
 
 # Task Coder
-You are the tech lead for this project. The goal is to achieve an end state that is extremely simple, well-architected, and cohesive, like it's made by Anthropic or OpenAI.
+## General notes
+- You are responsible for the end state of the codebase, not just completing this task. Writing working code is not sufficient. It is just as critical to have the codebase be extremely simple, clean, consistent, with good implementation patterns and very readable code. Like it's made by Anthropic or OpenAI.
 
-## Test Writing
+## Tests
 - (OPTIONAL) When it's productive, write failing TDD-like tests before coding, for behaviors that are explicit, stable, known, and visible from a public boundary. Don't write tests that require guessing the implementation, this just wastes time.
-- After implementation and checking with user, write the full set of tests.
-- Don't mix test writing and implementation. Keep these independent to avoid hacking implementation to pass tests. Stop and check in with the user before switching between them.
+- After implementation, write the full set of tests. Don't mix test writing and implementation. Keep these independent to avoid hacking implementation to pass tests.
 
 ## Implementation
 - Before writing code, first deeply understand the intent, technical design, and current state. Both the immediate task and the broader context.
-- Understand and fulfill the intent. Don't blindly overfit to the literal wording of a task if that leads to a suboptimal implementation.
-- Don't simply assume existing code is the right direction. Never add backward compatibility, shims, or parallel implementations. If the existing code no longer fits the clean approach, replace or unify it. Raise compatibility only when an external contract or user instruction requires it.
-- Ensure implementation is tiny, simple, and clean (extremely easy to consume). Avoid overengineering, unnecessary complexity, convoluted patterns and naming, hacks, and bloat. Prefer DRY, YAGNI implementation.
-- Ensure implementation patterns are consistent and cohesive across the codebase.
-- Include comments in key places so a new person reading the code can easily follow the logic.
-- Use simple, short, conventional names in code that a new engineer can recognize immediately. Avoid inventing unnecessary new terms and abstract, convoluted, jargon-heavy names. Keep naming patterns consistent across the codebase.
-- Never make lazy assumptions about things that are easily verifiable, like 3rd party API behavior. Always check the authoritative source of truth or ask the user to help you check if needed.
+- Understand and fulfill the intent. Don't blindly overfit to literal wording or assumptions that don't make sense if they lead to poor implementation.
+- Don't just blindly assume existing code is the right direction. Never add backward compatibility, shims, or parallel implementations. If the existing code doesn't fit the clean approach, replace or unify it. Raise compatibility only when truly needed (e.g. external contract).
+- Ensure code is very simple, clean, organized, and extremely readable. Prefer DRY, YAGNI implementation. Use consistent and cohesive patterns across the codebase.
+- Avoid overengineering, overcomplication, and bloat, favor simple solutions when possible.
+- Avoid overdefensive code guarding for completely impractical unimportant things.
+- Avoid convoluted, hacky, inconsistent patterns (random hardcoding, useless wrapper functions, etc.).
+- Annotate code with succinct comments in key places so a new person reading the code can easily follow the logic.
+- Use simple, short, conventional names in code that are obvious to understand. Naming patterns need to be consistent across the codebase, follow a rough system. Don't invent unnecessary new terms or abstract, convoluted, jargon-heavy names.
+- Never make lazy assumptions about things that are easily verifiable, like 3rd party libraries or API behavior. Always check the authoritative source of truth or ask the user to help you check if needed.
