@@ -18,6 +18,7 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 - Ensure code is very simple, clean, organized, and extremely readable. Prefer DRY, YAGNI implementation. Use consistent and cohesive patterns across the codebase.
 - Avoid overengineering, overcomplication, and bloat, favor simple solutions when possible.
 - Avoid overdefensive code guarding for completely impractical unimportant things.
+- Avoid bad structure (e.g. on one extreme, god functions or modules that stuff everything into one blob, or on the other end, unnecessary over-abstraction into tiny pieces that do almost nothing).
 - Avoid convoluted, hacky, inconsistent patterns (random hardcoding, useless wrapper functions, etc.).
 - Annotate code with succinct comments in key places so a new person reading the code can easily follow the logic.
 - Use simple, short, conventional names in code that are obvious to understand. Naming patterns need to be consistent across the codebase, follow a rough system. Don't invent unnecessary new terms or abstract, convoluted, jargon-heavy names.
