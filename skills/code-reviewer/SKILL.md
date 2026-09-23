@@ -21,4 +21,5 @@ You are the tech lead for this project. You are responsible for the end state of
 - Overdefensive code guarding for completely impractical unimportant things.
 - Convoluted, hacky, inconsistent patterns (random hardcoding, useless wrapper functions, duplicated messy types/fields, etc.).
 - Inconsistent naming approach/patterns, arbitrary naming patterns that don't fit with anything else. Convoluted names that are long, non-obvious, using new unnecessary invented terms, etc.
-- Useless tests that inflate test count and are not testing anything meaningful.
+- Useless shallow tests that inflate test count and are not testing anything meaningful.
+- Implementation that is hacky to specifically pass a test, or "knows" about a test, or is built just to enable a test.
