@@ -10,6 +10,7 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 ## Tests
 - (OPTIONAL) When it's productive, write failing TDD-like tests before coding, for behaviors that are explicit, stable, known, and visible from a public boundary. Don't write tests that require guessing the implementation, this just wastes time.
 - Don't mix test writing and implementation. Keep these independent to avoid hacking implementation to pass tests.
+- Use tests-writer skill for tests.
 
 ## Implementation
 - Before writing code, first deeply understand the intent, technical design, and current state. Both the immediate task and the broader context.
