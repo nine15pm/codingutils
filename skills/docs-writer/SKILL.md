@@ -18,7 +18,9 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 ## Writing style
 - Be direct. Use simple, common, plain English words vs. more complex synonyms. Use established technical terms when they are most precise and keep technical terms, product terms, etc. exact.
 
-- Strongly prefer active voice.
+- Strongly prefer active voice. But don't overfit. E.g. leading with the right clause "When a turn is running, new messages are queued. After stopping, a queued message stays queued." is far easier to understand vs. "A message waits in the queue while a turn is running or while the queue is paused after stop".
+
+- Lead with the situation to, e.g. "When a turn is running, new messages are queued. After stopping, a queued message stays queued."
 
 - Prefer simple tenses: present, past, and future.
 
