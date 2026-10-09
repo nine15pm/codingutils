@@ -8,15 +8,15 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 - You are responsible for the end state of the codebase, not just completing this task. Writing working code is not sufficient. It is just as critical to have the codebase be extremely simple, clean, consistent, with good implementation patterns and very readable code. Like it's made by Anthropic or OpenAI.
 
 ## Tests
-- (OPTIONAL) When it's productive, write failing TDD-like tests before coding, for behaviors that are explicit, stable, known, and visible from a public boundary. Don't write tests that require guessing the implementation, this just wastes time.
+- When it's productive, write failing TDD-like tests before coding. Don't write tests that require overly guessing the implementation, this just wastes time.
 - Don't mix test writing and implementation. Keep these independent to avoid hacking implementation to pass tests.
 - Use tests-writer skill for tests.
 
 ## Implementation
-- Before writing code, first deeply understand the intent, technical design, and current state. Both the immediate task and the broader context.
-- Understand and fulfill the intent. Don't blindly overfit to literal wording or assumptions that don't make sense if they lead to poor implementation.
+- Before coding, map out the behavior to guide what you build and test, instead of just winging it. Write it down succinctly in chat. For example, states or cases, lifecycle, what moves between them, who owns each value, etc.
+- Don't blindly overfit to literal wording of docs/tasks or assumptions that don't make sense if they lead to poor implementation.
 - Don't just blindly assume existing code is the right direction. Never add backward compatibility, shims, or parallel implementations. If the existing code doesn't fit the clean approach, replace or unify it. Raise compatibility only when truly needed (e.g. external contract).
-- Ensure code is very simple, clean, organized, and extremely readable. Prefer DRY, YAGNI implementation. Use consistent and cohesive patterns across the codebase.
+- Ensure code is very simple, clean, organized, and extremely readable. Use consistent and cohesive patterns across the codebase.
 - Avoid overengineering, overcomplication, and bloat, favor simple solutions when possible.
 - Avoid overdefensive code guarding for completely impractical unimportant things.
 - Avoid bad structure (e.g. on one extreme, god functions or modules that stuff everything into one blob, or on the other end, unnecessary over-abstraction into tiny pieces that do almost nothing).
