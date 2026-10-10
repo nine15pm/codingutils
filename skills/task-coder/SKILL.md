@@ -24,3 +24,4 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 - Annotate code with succinct comments in key places so a new person reading the code can easily follow the logic.
 - Use simple, short, conventional names in code that are obvious to understand. Naming patterns need to be consistent across the codebase, follow a rough system. Don't invent unnecessary new terms or abstract, convoluted, jargon-heavy names.
 - Never make lazy assumptions about things that are easily verifiable, like 3rd party libraries or API behavior. Always check the authoritative source of truth or ask the user to help you check if needed.
+- If issues come up repeatedly in the same area, don't just blindly patch. Take a big step back and consider if the approach or existing code is off and should be rewritten.
