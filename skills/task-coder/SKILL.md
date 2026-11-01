@@ -15,7 +15,7 @@ description: Use only when the user explicitly invokes this skill. Do not proact
 ## Implementation
 - Before coding, map out the behavior to guide what you build and test, instead of just winging it. Write it down succinctly in chat. For example, states or cases, lifecycle, what moves between them, who owns each value, etc.
 - Don't blindly overfit to literal wording of docs/tasks or assumptions that don't make sense if they lead to poor implementation.
-- Don't just blindly assume existing code is the right direction. Never add backward compatibility, shims, or parallel implementations. If the existing code doesn't fit the clean approach, replace or unify it. Raise compatibility only when truly needed (e.g. external contract).
+- Don't just blindly assume existing code is the right direction. If the existing code is the wrong design, rewrite it and remove the old path. If the existing code doesn't fit the clean approach, rewrite it.
 - Ensure code is very simple, clean, organized, and extremely readable. Use consistent and cohesive patterns across the codebase.
 - Avoid overengineering, overcomplication, and bloat, favor simple solutions when possible.
 - Avoid overdefensive code guarding for completely impractical unimportant things.
